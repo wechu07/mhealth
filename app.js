@@ -33,7 +33,17 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(cors());
 app.use(flash());
-app.use(helmet());
+// app.use(helmet());
+// app.use(helmet({
+//   contentSecurityPolicy: {
+//     directives: {
+//       'script-src': ["'self'", "https://*"],
+//       'style-src': ["'self'", "https://*"],
+//       'img-src': ["'self'", "https://*"]
+//     }
+//   }
+// }));
+app.use(helmet.contentSecurityPolicy())
 app.use(mongoSanitize());
 
 // app.get('/', (req, res) => {

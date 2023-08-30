@@ -104,8 +104,8 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    /* color: #FFFFFF; */
-    color: var(--primary);
+    color: #FFFFFF;
+    /* color: var(--primary); */
     /* color: rgba(255, 255, 255, .07) */
     font-weight: 500;
     outline: none;

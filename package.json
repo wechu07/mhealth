@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app",
+    "dev": "cross-env NODE_ENV=development nodemon",
     "start": "node app"
   },
   "keywords": [],
@@ -33,6 +33,8 @@
     "multer-storage-cloudinary": "^4.0.0"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.8",
+    "cross-env": "^7.0.3",
     "nodemon": "^3.0.1"
   }
 }
