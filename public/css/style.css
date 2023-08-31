@@ -1,9 +1,9 @@
 /**********  CSS **********/
 :root {
-    --primary: #FF6F0F;
+    --primary: #d7843f;
     --secondary: #FFF0E6;
     --light: #F8F8F9;
-    --dark: #001D23;
+    --dark: #254f6c;
 }
 
 /* body {
@@ -159,6 +159,7 @@
     justify-content: center;
     text-align: center;
     background: rgba(0, 29, 35, .8);
+    /* background: rgba(143, 192, 213, .5); */
     z-index: 1;
 }
 
