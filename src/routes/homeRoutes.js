@@ -5,6 +5,31 @@ router.get("/", (req, res) => {
   res.render("home", { page });
 });
 
+router.get("/v2", (req, res) => {
+  const page = "Home";
+  res.render("homev2", { page });
+});
+
+router.get("/v3", (req, res) => {
+  const page = "Home";
+  res.render("homev3", { page });
+});
+
+router.get("/v4", (req, res) => {
+  const page = "Home";
+  res.render("homev4", { page });
+});
+
+router.get("/v5", (req, res) => {
+  const page = "Home";
+  res.render("homev5", { page });
+});
+
+router.get("/v6", (req, res) => {
+  const page = "Home";
+  res.render("homev6", { page });
+});
+
 router.get("/about", (req, res) => {
   const page = "About Us";
   res.render("about", { page });
@@ -61,7 +86,7 @@ router.get("/donate", (req, res) => {
 });
 
 router.get("/contact", (req, res) => {
-  const page = "Contact";
+  const page = "Contact Us";
   res.render("contact", { page });
 });
 
