@@ -5,31 +5,6 @@ router.get("/", (req, res) => {
   res.render("home", { page });
 });
 
-router.get("/v2", (req, res) => {
-  const page = "Home";
-  res.render("homev2", { page });
-});
-
-router.get("/v3", (req, res) => {
-  const page = "Home";
-  res.render("homev3", { page });
-});
-
-router.get("/v4", (req, res) => {
-  const page = "Home";
-  res.render("homev4", { page });
-});
-
-router.get("/v5", (req, res) => {
-  const page = "Home";
-  res.render("homev5", { page });
-});
-
-router.get("/v6", (req, res) => {
-  const page = "Home";
-  res.render("homev6", { page });
-});
-
 router.get("/about", (req, res) => {
   const page = "About Us";
   res.render("about", { page });
@@ -48,6 +23,30 @@ router.get("/focus", (req, res) => {
 router.get("/signup", (req, res) => {
   const page = "Member Signup";
   res.render("signup", { page });
+});
+
+router.get("/communityhealth", (req, res) => {
+  const page = "Community Health Worker Signup";
+  // res.render("signup", { page });
+  res.render("chealth", { page });
+});
+
+router.get("/juniordoctor", (req, res) => {
+  const page = "Junor Doctor Signup";
+  // res.render("signup", { page });
+  res.render("juniordoctor", { page });
+});
+
+router.get("/nurse", (req, res) => {
+  const page = "Nurse Signup";
+  // res.render("signup", { page });
+  res.render("nurse", { page });
+});
+
+router.get("/medstudent", (req, res) => {
+  const page = "Medical Student Signup";
+  // res.render("signup", { page });
+  res.render("medstudent", { page });
 });
 
 router.get("/members", (req, res) => {
