@@ -10,16 +10,19 @@ const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
 const flash = require("connect-flash");
 const navigationRoutes = require("./src/routes/homeRoutes");
+const connectDatabase = require("./config/connectDatabase");
 
 // loading the envariables
 dotenv.config();
 
+connectDatabase();
+
 const app = express();
 
-// HTTP request logger middleware by morgan
-if (process.env.NODE_ENV === "development") {
-  app.use(morgan("dev"));
-}
+// // HTTP request logger middleware by morgan
+// if (process.env.NODE_ENV === "development") {
+//   app.use(morgan("dev"));
+// }
 
 app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");

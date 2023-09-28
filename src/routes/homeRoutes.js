@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { donation } = require("../controllers/donationController");
 
 router.get("/", (req, res) => {
   const page = "Home";
@@ -79,10 +80,14 @@ router.get("/resources", (req, res) => {
   res.render("resources", { page });
 });
 
+
+// Donation logic
 router.get("/donate", (req, res) => {
   const page = "Donate";
   res.render("donate", { page });
 });
+
+router.post("/donate", donation);
 
 router.get("/contact", (req, res) => {
   const page = "Contact Us";
