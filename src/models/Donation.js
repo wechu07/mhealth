@@ -10,6 +10,7 @@ const DonationSchema = new mongoose.Schema({
   amount: {
     type: Number,
   },
+  date: { type: Date, default: Date.now },
 });
 
 const Donation = mongoose.model("Donation", DonationSchema);
