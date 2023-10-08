@@ -15,14 +15,14 @@ const connectDatabase = require("./config/connectDatabase");
 // loading the envariables
 dotenv.config();
 
-connectDatabase();
+// connectDatabase();
 
 const app = express();
 
-// // HTTP request logger middleware by morgan
-// if (process.env.NODE_ENV === "development") {
-//   app.use(morgan("dev"));
-// }
+// HTTP request logger middleware by morgan
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
+}
 
 app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
@@ -36,22 +36,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(cors());
 app.use(flash());
-// app.use(helmet());
-// app.use(helmet({
-//   contentSecurityPolicy: {
-//     directives: {
-//       'script-src': ["'self'", "https://*"],
-//       'style-src': ["'self'", "https://*"],
-//       'img-src': ["'self'", "https://*"]
-//     }
-//   }
-// }));
 app.use(helmet.contentSecurityPolicy())
 app.use(mongoSanitize());
-
-// app.get('/', (req, res) => {
-//     res.render('home')
-// })
 
 app.use("/", navigationRoutes);
 
