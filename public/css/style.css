@@ -384,6 +384,12 @@ body {
     transition: .5s;
 }
 
+.team-item .team-text {
+    position: relative;
+    height: 100px;
+    transition: .5s;
+}
+
 .team-item:hover .team-text {
     margin-top: -60px;
     height: 160px;
