@@ -15,7 +15,7 @@ const connectDatabase = require("./config/connectDatabase");
 // loading the envariables
 dotenv.config();
 
-// connectDatabase();
+connectDatabase();
 
 const app = express();
 
