@@ -12,7 +12,7 @@ router.get("/about", (req, res) => {
 });
 
 router.get("/team", (req, res) => {
-  const page = "Meet The Team";
+  const page = "Meet Our Members";
   res.render("team", { page });
 });
 
