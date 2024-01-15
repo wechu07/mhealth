@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for mhealth-patient-water-211 on 2023-12-08T17:11:21+03:00
+# fly.toml app configuration file generated for mhealth on 2024-01-14T22:50:58+03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = "mhealth"
-primary_region = "cdg"
+primary_region = "jnb"
 
 [build]
 
