@@ -12,7 +12,7 @@ router.get("/about", (req, res) => {
 });
 
 router.get("/team", (req, res) => {
-  const page = "Meet Our Members";
+  const page = "Meet The Team";
   res.render("team", { page });
 });
 
@@ -28,25 +28,21 @@ router.get("/signup", (req, res) => {
 
 router.get("/communityhealth", (req, res) => {
   const page = "Community Health Worker Signup";
-  // res.render("signup", { page });
   res.render("chealth", { page });
 });
 
-router.get("/juniordoctor", (req, res) => {
-  const page = "Junor Doctor Signup";
-  // res.render("signup", { page });
+router.get("/practice", (req, res) => {
+  const page = "Health Practitioners and Institutions Signup";
   res.render("juniordoctor", { page });
 });
 
-router.get("/nurse", (req, res) => {
-  const page = "Nurse Signup";
-  // res.render("signup", { page });
+router.get("/nurses", (req, res) => {
+  const page = "Nurses Signup";
   res.render("nurse", { page });
 });
 
-router.get("/medstudent", (req, res) => {
+router.get("/student", (req, res) => {
   const page = "Medical Student Signup";
-  // res.render("signup", { page });
   res.render("medstudent", { page });
 });
 
@@ -56,8 +52,9 @@ router.get("/members", (req, res) => {
 });
 
 router.get("/fundraising", (req, res) => {
-  const page = "Fundraising";
-  res.render("fundraising", { page });
+  // const page = "Fundraising";
+  // res.render("fundraising", { page });
+  res.redirect("members");
 });
 
 router.get("/partner", (req, res) => {
