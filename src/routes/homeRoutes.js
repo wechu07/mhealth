@@ -33,7 +33,7 @@ router.get("/communityhealth", (req, res) => {
 
 router.get("/practice", (req, res) => {
   const page = "Health Practitioners and Institutions Signup";
-  res.render("juniordoctor", { page });
+  res.render("practice", { page });
 });
 
 router.get("/nurses", (req, res) => {
@@ -41,7 +41,7 @@ router.get("/nurses", (req, res) => {
   res.render("nurse", { page });
 });
 
-router.get("/student", (req, res) => {
+router.get("/students", (req, res) => {
   const page = "Medical Student Signup";
   res.render("medstudent", { page });
 });
