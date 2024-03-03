@@ -26,6 +26,21 @@ router.get("/signup", (req, res) => {
   res.render("signup", { page });
 });
 
+router.get("/initiatives", (req, res) => {
+  const page = "Initiatives";
+  res.render("initiatives", { page });
+});
+
+router.get("/academy", (req, res) => {
+  const page = "Academy";
+  res.render("academy", { page });
+});
+
+router.get("/cancel", (req, res) => {
+  const page = "Cancelled Payment";
+  res.render("cancel", { page });
+});
+
 router.get("/communityhealth", (req, res) => {
   const page = "Community Health Worker Signup";
   res.render("chealth", { page });
@@ -57,9 +72,9 @@ router.get("/fundraising", (req, res) => {
   res.redirect("members");
 });
 
-router.get("/partner", (req, res) => {
-  const page = "Partner With Us";
-  res.render("partner", { page });
+router.get("/take-action", (req, res) => {
+  const page = "Take Action";
+  res.render("take-action", { page });
 });
 
 router.get("/stakeholders", (req, res) => {
