@@ -19,31 +19,33 @@
                     <p class="mb-4">Improve Healthcare Services Through Digital Education</p>
                     <p class="mb-4">Become a Global Medical Practitioner</p>
                     <p class="mb-4">Sign Up below.</p>
-                    <form>
+                    <form id="practitioner" action="/submit" method="POST">
+                        <!-- Add hidden input for formId -->
+                        <input type="hidden" name="formId" value="practitioner">
+                    
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject"
-                                        placeholder="Registration Number">
-                                    <label for="subject">License Number</label>
+                                    <input type="text" class="form-control" id="license_number" name="license_number" placeholder="License Number">
+                                    <label for="license_number">License Number</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="file" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Upload your picture</label>
+                                    <input type="file" class="form-control" id="picture" name="picture" placeholder="Upload your picture">
+                                    <label for="picture">Upload your picture</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -55,7 +57,7 @@
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    </form>                    
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">

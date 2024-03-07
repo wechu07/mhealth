@@ -87,6 +87,11 @@ router.get("/gallery", (req, res) => {
   res.render("gallery", { page });
 });
 
+router.get("/admin", (req, res) => {
+  const page = "Admin";
+  res.render("admin", { page });
+});
+
 router.get("/resources", (req, res) => {
   const page = "Resources";
   res.render("resources", { page });
@@ -104,6 +109,11 @@ router.post("/donate", donation);
 router.get("/contact", (req, res) => {
   const page = "Contact Us";
   res.render("contact", { page });
+});
+
+router.post("/submit", (req, res) => {
+  console.log(req.body);
+  res.redirect("/initiatives")
 });
 
 module.exports = router;
