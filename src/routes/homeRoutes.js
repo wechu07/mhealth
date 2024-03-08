@@ -111,9 +111,9 @@ router.get("/contact", (req, res) => {
   res.render("contact", { page });
 });
 
-router.post("/submit", (req, res) => {
-  console.log(req.body);
-  res.redirect("/initiatives")
-});
+// router.post("/submit", (req, res) => {
+//   console.log(req.body);
+//   res.redirect("/initiatives")
+// });
 
 module.exports = router;

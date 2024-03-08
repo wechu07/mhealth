@@ -10,6 +10,7 @@ const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
 const flash = require("connect-flash");
 const navigationRoutes = require("./src/routes/homeRoutes");
+const formRoutes = require("./src/routes/formRoutes");
 const connectDatabase = require("./config/connectDatabase");
 
 // loading the envariables
@@ -40,6 +41,7 @@ app.use(helmet.contentSecurityPolicy())
 app.use(mongoSanitize());
 
 app.use("/", navigationRoutes);
+app.use("/submit", formRoutes);
 
 const port = process.env.PORT || 7000;
 
