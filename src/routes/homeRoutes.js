@@ -92,6 +92,11 @@ router.get("/admin", (req, res) => {
   res.render("admin", { page });
 });
 
+router.get("/admin/members", (req, res) => {
+  const page = "Signed Up Members";
+  res.render("admin", { page });
+});
+
 router.get("/resources", (req, res) => {
   const page = "Resources";
   res.render("resources", { page });
