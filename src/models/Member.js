@@ -4,6 +4,7 @@ const memberSchema = new mongoose.Schema({
   formId: { type: String, required: true },
   name: { type: String },
   email: { type: String },
+  institution: { type: String },
   registration_number: { type: String },
   license_number: { type: String },
   picture: { type: String },

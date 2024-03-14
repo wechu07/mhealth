@@ -1,6 +1,5 @@
 <% layout('layout/layout') %>
 
-
     <!-- Contact Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -13,34 +12,51 @@
                             <i class="fa fa-arrow-right"></i>
                         </div>
                     </a>
+                    <a class="btn btn-primary py-2 px-3 mb-4" href="https://tally.so/r/3xpjxy">
+                        Mhealth4Africa Digital Academy
+                        <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </a>
                     <p class="mb-4">Improve Healthcare Services Through Digital Education</p>
-                    <p class="mb-4">Become a Global MedicalStudent</p>
+                    <p class="mb-4">Become an International Medical Graduate</p>
                     <p class="mb-4">Sign Up below.</p>
                     <form id="medstudent" action="/submit" method="POST">
                         <input type="hidden" name="formId" value="medstudent">
-                    
+
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Your Name">
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Your Email">
                                     <label for="email">Your University Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input type="institution" class="form-control" id="institution" name="institution"
+                                        placeholder="Your Institution">
+                                    <label for="institution">Your Institution</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="registration_number" name="registration_number" placeholder="Registration Number">
+                                    <input type="text" class="form-control" id="registration_number"
+                                        name="registration_number" placeholder="Registration Number">
                                     <label for="registration_number">Registration Number</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="file" class="form-control" id="picture" name="picture" placeholder="Upload your picture">
+                                    <input type="file" class="form-control" id="picture" name="picture"
+                                        placeholder="Upload your picture">
                                     <label for="picture">Upload your picture</label>
                                 </div>
                             </div>
@@ -54,7 +70,7 @@
                             </div>
                         </div>
                     </form>
-                    
+
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">

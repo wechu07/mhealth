@@ -6,6 +6,7 @@ const Contact = require("../models/Contact");
 const Member = require("../models/Member");
 const Ambassador = require("../models/Ambassador");
 const PartnerCommunity = require("../models/PartnerCommunity");
+const PartnerArt = require("../models/PartnerArt");
 const SchoolDigital = require("../models/SchoolDigital");
 const SponsorCommunity = require("../models/SponsorCommunity");
 const SponsorDigital = require("../models/SponsorDigital");
@@ -42,6 +43,9 @@ router.post("/", async (req, res) => {
       case "partner-form-community":
         await PartnerCommunity.create(req.body);
         break;
+        case "partner-form-art":
+          await PartnerArt.create(req.body);
+          break;
       case "school-form-digital":
         await SchoolDigital.create(req.body);
         break;

@@ -102,6 +102,16 @@ router.get("/resources", (req, res) => {
   res.render("resources", { page });
 });
 
+router.get("/newsletter", (req, res) => {
+  const page = "Newsletter";
+  res.render("newsletter", { page });
+});
+
+router.get("/terms", (req, res) => {
+  const page = "Terms and Conditions";
+  res.render("terms", { page });
+});
+
 
 // Donation logic
 router.get("/donate", (req, res) => {
