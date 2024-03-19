@@ -104,7 +104,7 @@ const createOrder = async (cart) => {
       {
         amount: {
           currency_code: "USD",
-          value: "190.00",
+          value: "140.00",
         },
       },
     ],
