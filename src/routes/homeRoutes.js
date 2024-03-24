@@ -66,12 +66,6 @@ router.get("/members", (req, res) => {
   res.render("members", { page });
 });
 
-router.get("/fundraising", (req, res) => {
-  // const page = "Fundraising";
-  // res.render("fundraising", { page });
-  res.redirect("members");
-});
-
 router.get("/take-action", (req, res) => {
   const page = "Take Action";
   res.render("take-action", { page });
