@@ -45,12 +45,12 @@ app.use(
   helmet.contentSecurityPolicy({
     directives: {
       defaultSrc: ["'self'"],
-      scriptSrc: ["'self'", "'unsafe-inline'", "https://tally.so", "https://www.paypal.com", "https://www.sandbox.paypal.com"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "https://tally.so", "https://www.paypal.com", "https://www.sandbox.paypal.com", "https://acrobatservices.adobe.com"],
       styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdnjs.cloudflare.com", "https://cdn.jsdelivr.net"],
       imgSrc: ["'self'", "data:", "https://tally.so", "https://www.paypalobjects.com"],
       fontSrc: ["'self'", "https://fonts.gstatic.com", "https://cdnjs.cloudflare.com", "https://cdn.jsdelivr.net"],
-      connectSrc: ["'self'", "https://tally.so", "https://www.sandbox.paypal.com"],
-      frameSrc: ["'self'", "https://tally.so", "https://www.sandbox.paypal.com", "https://www.paypal.com"],
+      connectSrc: ["'self'", "https://tally.so", "https://www.sandbox.paypal.com", "https://acrobatservices.adobe.com"],
+      frameSrc: ["'self'", "https://tally.so", "https://www.sandbox.paypal.com", "https://www.paypal.com", "https://acrobatservices.adobe.com"],
       objectSrc: ["'none'"],
       upgradeInsecureRequests: [],
     },
